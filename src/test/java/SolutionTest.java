@@ -35,7 +35,7 @@ class SolutionTest {
 			redirectStreams(
 					new ByteArrayInputStream( input.getBytes( UTF_8 )),
 					new PrintStream( bos, true, UTF_8 ),
-					new PrintStream( new ByteArrayOutputStream(), true, UTF_8 )
+					oldErr
 			);
 			
 			// start time tracking
